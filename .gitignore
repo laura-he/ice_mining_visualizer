@@ -1,0 +1,122 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# PyBuilder
+target/
+
+# IPython / Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# pyenv
+.python-version
+
+# Pipenv
+Pipfile.lock
+
+# Poetry
+poetry.lock
+
+# pyright / pylance / mypy
+.pyright/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# VSCode / IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# PyCharm
+*.iml
+*.ipr
+*.iws
+
+# VS Code logs
+*.log
+
+# macOS / Linux / Windows junk files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Environment files
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Local credentials or config
+*.env
+.env.*
+
+# Lock files
+poetry.lock
+Pipfile.lock
+
+# Ignore backup, notebook, and alternative versions of scripts
+visualizer.py.bak
+load_parquet.ipynb
+ablation_run.sh
+run.sh
+features_only_visualizer.py
+visualizer_features_sandbox.py
+README.pdf
+
+# Ignore all directories
+data_for_export.parquet.zip
+figures/
+outputs/
+napari_ice_visualizer/

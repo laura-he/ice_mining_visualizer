@@ -1,0 +1,11 @@
+name: phoenix-v2
+channels:
+  - defaults
+dependencies:
+  - python=3.8
+  - arize-phoenix==0.0.28
+  - pandas
+  - ipykernel
+  - matplotlib
+  - seaborn
+prefix: /Users/laura/anaconda3/envs/phoenix-v2
