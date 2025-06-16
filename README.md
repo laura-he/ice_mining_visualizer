@@ -3,6 +3,7 @@
 We use Phoenix to interactively visualize the embedding space in 3D. We recommend installing Phoenix on your laptop, or a machine where you can SSH with X11 forwardning, in order to visualize the results.
 
 **Requirements**
+
 0. Install Conda
 1. Create a new conda environment:
    ```bash
@@ -29,14 +30,15 @@ We use Phoenix to interactively visualize the embedding space in 3D. We recommen
    1. ```data_for_export.parquet.zip```, containing the metadata and embeddings for each entry in the dataset
    2. ```zipped_thumbnail_images.tar.gz```, containing .jpeg thumbnail images for visualization
 
-4. Unzip the thumbnail images tarball: 
-5. To connect images to the locahost and keep it running in the background, open a new terminal, change directory to ```thumbnail_images```, and run the following command:
+4. Make a new folder to store your thumbnail images: ```mkdir -p thumbnail_images```
+5. Unzip the thumbnail images tarball into the folder you just made: ```tar -xzf zipped_thumbnail_images.tar.gz -C thumbnail_images```
+6. To connect images to the locahost and keep it running in the background, open a new terminal, change directory to ```thumbnail_images```, and run the following command:
    ```bash
    python -m http.server 7000
    ```
    The images will be hosted on port number ```7000```.
    
-6. Open another terminal window. From the directory where the code exists, run the following:
+7. Open another terminal window. From the directory where the code exists, run the following:
    ```bash
    python visualizer.py <path_to_zip_file> --port 7000 --which-embedding umap
    ```
